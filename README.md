@@ -15,7 +15,6 @@
 # Git Clone
 git clone https://github.com/Daker-china/Webpack-Koa2-TypeScript-MySql-Template.git
 
-
 # Install dependencies
 npm install
 
