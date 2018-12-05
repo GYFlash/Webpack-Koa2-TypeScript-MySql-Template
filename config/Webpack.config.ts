@@ -4,8 +4,6 @@ import * as webpack from 'webpack';
 import * as nodeExternals from 'webpack-node-externals';
 import { Configuration, ExternalsElement } from 'webpack';
 
-console.log(path.resolve(__dirname, '../dist'));
-
 class WebpackConfig implements Configuration {
   target: Configuration['target'] = 'node';
   mode: Configuration['mode'] = 'production';
