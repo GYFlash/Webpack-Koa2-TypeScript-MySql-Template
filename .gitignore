@@ -1,0 +1,27 @@
+# Package
+package-lock.json
+
+# Coverage reports
+coverage
+
+# API keys and secrets
+.env
+
+# Dependency directory
+node_modules
+bower_components
+
+# Logs
+npm-debug.log
+
+# Editors
+.idea
+.vscode
+*.iml
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Ignore built ts files
+dist/**/*
