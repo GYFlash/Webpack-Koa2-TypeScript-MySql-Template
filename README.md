@@ -19,10 +19,12 @@ git clone https://github.com/Daker-china/Webpack-Koa2-TypeScript-MySql-Template.
 npm install
 
 # 开发环境
-# 1.webpack
+# 1.webpack (支持部分热更新)
 npm run dev:webpack
-# 2.ts-node
+# 2.ts-node (不支持热更新)
 npm run start
+# 3.nodemon and ts-node (代码更新自动重启)
+npm run start:watch
  
 # 生产环境
 # 1. webpack 编译为单文件, 可直接使用 node 运行 无需再次安装依赖
