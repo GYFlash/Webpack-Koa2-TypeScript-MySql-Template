@@ -33,7 +33,7 @@ if (module.hot) {
     server.on('request', currentApp);
   });
 }
-// 使用 tsc 编译 打包
+// 使用 tsc 编译 打包 或者 直接运行 ts 不打包编译
 
 // app.listen(3000, () => {
 //   console.log('Server is running at http://localhost:3000');
