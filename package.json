@@ -4,8 +4,11 @@
   "description": "Use webpack to build node projects",
   "main": "server/app.ts",
   "scripts": {
-    "dev": "rm -rf ./dist && ts-node ./scripts/start-dev.ts",
-    "build": "rm -rf ./dist && ts-node ./scripts/build.ts",
+    "dev:webpack": "rm -rf ./dist && ts-node ./scripts/start-dev.ts",
+    "build:webpack": "rm -rf ./dist && ts-node ./scripts/build.ts",
+    "build:tsc": "npm run tslint && rm -rf ./dist && tsc --build",
+    "start": "npm run tslint && ts-node ./server/app.ts",
+    "start:build": "node ./dist/app.js",
     "tslint": "tslint -c tslint.json -p tsconfig.json"
   },
   "author": "Daker<daker.zhou@gmail.com>",
@@ -15,9 +18,7 @@
     "koa": "^2.6.2",
     "koa-bodyparser": "^4.2.1",
     "koa-router": "^7.4.0",
-    "mysql": "^2.16.0",
-    "webpack": "^4.27.0",
-    "webpack-cli": "^3.1.2"
+    "mysql": "^2.16.0"
   },
   "devDependencies": {
     "@types/jsonwebtoken": "^8.3.0",
@@ -34,6 +35,8 @@
     "ts-node": "^5.0.1",
     "tslint": "^5.11.0",
     "typescript": "^3.2.1",
+    "webpack": "^4.27.0",
+    "webpack-cli": "^3.1.2",
     "webpack-node-externals": "^1.7.2"
   }
 }

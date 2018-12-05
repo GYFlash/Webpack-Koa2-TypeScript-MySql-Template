@@ -15,15 +15,27 @@
 # Git Clone
 git clone https://github.com/Daker-china/Webpack-Koa2-TypeScript-MySql-Template.git
 
-# Install dependencies
+# 安装依赖
 npm install
 
-# serve with hot reload at localhost:3000
-npm run dev
+# 开发环境
+# 1.webpack
+npm run dev:webpack
+# 2.ts-node
+npm run start
+ 
+# 生产环境
+# 1. webpack 编译为单文件, 可直接使用 node 运行 无需再次安装依赖
+npm run build:webpack
 
-# build for production with minification
-npm run build
+# 2. tsc 只编译 ts 文件, 需要安装生产环境依赖包
+npm run build:tsc
 
+# 运行编译后的代码
+npm run start:build 
+
+# 代码风格检查
+npm run tslint
 ```
 
 ## 目录结构
